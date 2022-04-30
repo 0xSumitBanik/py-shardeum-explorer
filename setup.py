@@ -8,8 +8,7 @@ setup(
     author="Sumit Banik",
     license="MIT",
     packages=[
-        "shardeum-explorer",
-        "shardeum-explorer.configs"
+        "shardeumexplorer"
     ],
     python_requires='>=3.8',
     install_requires=["requests"],
