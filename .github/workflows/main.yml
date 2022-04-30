@@ -1,0 +1,26 @@
+name: shardeumexplorer-pipeline
+on:
+  schedule:
+    - cron: "30 2 * * *"
+jobs:
+  run_tests:
+    name: Run pyTests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code.
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: |
+          pip install -U pytest
+        shell: bash
+      
+      - name: Run the tests
+        run: |
+          ./run_tests.sh
+        shell: bash
