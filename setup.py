@@ -9,7 +9,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(os.path.abspath(__file__)), *rnames)).read()
 setup(
     name="py-shardeum-explorer",
-    version="0.0.1",
+    version="0.0.2",
     description="A minimal, complete, python API for Shardeum Explorer.",
     long_description=read("README.md"),
     url="https://github.com/iSumitBanik/py-shardeum-explorer",
