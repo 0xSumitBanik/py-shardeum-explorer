@@ -1,7 +1,7 @@
 name: shardeumexplorer-pipeline
 on:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "0 14 * * *"
 jobs:
   run_tests:
     name: Run pyTests
@@ -22,5 +22,6 @@ jobs:
       
       - name: Run the tests
         run: |
+          chmod +x run_tests.sh
           ./run_tests.sh
         shell: bash
