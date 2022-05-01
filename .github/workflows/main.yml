@@ -1,7 +1,5 @@
 name: shardeumexplorer-pipeline
-on:
-  schedule:
-    - cron: "0 14 * * *"
+on:  push
 jobs:
   run_tests:
     name: Run pyTests
