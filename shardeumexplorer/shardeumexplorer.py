@@ -9,7 +9,7 @@ class ShardeumExplorer:
     """
     self.decimal_places = 18
     if(network.lower() == "liberty"):
-      self.block_explorer_url = "http://explorer.liberty10.shardeum.org:5555"
+      self.block_explorer_url = "http://explorer.liberty10.shardeum.org"
   
   def get_account_balance(self,address):
     """ This function returns the balance for a specific account (in SHM).
