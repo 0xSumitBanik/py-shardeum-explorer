@@ -1,7 +1,7 @@
 import pytest
 from shardeumexplorer import ShardeumExplorer
 
-FIRST_TEST_ADDRESS = "0x822429119D53055fB11E69213613851ba28bd888"
+FIRST_TEST_ADDRESS = "0x9D06148B2e080BF8761A64e9BC939B32dABb78b9"
 
 def test_get_account_balance(get_network):
   shardeum_explorer = ShardeumExplorer(get_network)
