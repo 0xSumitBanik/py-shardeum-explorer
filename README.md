@@ -2,6 +2,7 @@
 
 A minimal, complete, python API for Shardeum Explorer.
 
+[![Downloads](https://pepy.tech/badge/py-shardeum-explorer)](https://pepy.tech/project/py-shardeum-explorer)
 #### Usage
 
 Install the package from [PyPi](https://pypi.org/project/py-shardeum-explorer/)
